@@ -1,0 +1,13 @@
+body{
+  background-color: aqua;
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+#root{
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  
+}
