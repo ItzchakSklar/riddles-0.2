@@ -31,8 +31,21 @@ export function Riddles({ setPage }: { setPage: Function }) {
 
   return (
     <>
+      <p>{riddles[riddleIndex].name}</p>
       <p>{riddles[riddleIndex].taskDescription}</p>
-      <button onClick={() => setPage("enter")}>back to menu</button>
+      <button
+        onClick={() => {
+          if (riddleIndex < riddles.length - 1) {
+            setRiddleIndex(riddleIndex + 1);
+          }
+        }}
+      >
+        enser
+      </button>
+      <button className="back" onClick={() => setPage("enter")}>
+        back to menu
+      </button>
     </>
   );
 }
+// r.id, r.name, r.taskDescription, r.correctAnswer
