@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 export function Riddles({ setPage }: { setPage: Function }) {
   const [riddles, setRiddles] = useState<any[]>([]);
   const [riddleIndex, setRiddleIndex] = useState(0);
+
   const PORT = import.meta.env.VITE_PORT || 3005;
+  
   useEffect(() => {
     async function fetchRiddles() {
       try {

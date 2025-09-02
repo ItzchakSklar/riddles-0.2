@@ -1,7 +1,7 @@
 import "./App.css";
-import { Enter } from "./comps/Enter.tsx";
+import { Enter } from "./comps/Enter.comp.tsx";
 // import {Admin} from "./comps/Admin.tsx";
-import { Riddles } from "./comps/Riddles.tsx";
+import { Riddles } from "./comps/Riddles.comp.tsx";
 import { useState } from "react";
 
 function App() {
